@@ -9,27 +9,28 @@ function App() {
   
   const router = createBrowserRouter([
     { path: '/', 
-    element: <Main></Main>,
+    element: <Main />,
     children: [
       {
         path:'/',
-        element: <Home></Home>
+        element: <Home />
       },
       {
         path:'/home',
-        element: <Home></Home>
+        loader: () => fetch('tshirt.json'),
+        element: <Home />
       },
       {
         path:'/about',
-        element: <About></About>
+        element: <About />
       },
       {
         path:'/contacts',
-        element: <Contacts></Contacts>
+        element: <Contacts />
       },
       {
         path:'/orders',
-        element: <Orders></Orders>
+        element: <Orders />
       },
     ]
   }
@@ -37,8 +38,8 @@ function App() {
   return (
     <div className="App">
      <RouterProvider 
-     router={router}>
-     </RouterProvider>
+     router={router} />
+     
     </div>
   );
 }
