@@ -8,14 +8,15 @@ const Home = () => {
     const tshirts = useLoaderData();
     return (
         <div className='home-conatainer'>
-           <div className='tshirt-container'> 
-               {
-             tshirts.map(tshirt=><TShirt
+           <div className='tshirt-container'>       
+           {
+            tshirts.map(tshirt=><TShirt
             key={tshirt._id}
             tshirt={tshirt}
             ></TShirt>)
            }
-           </div>
+           
+              </div>
            <div className='cart-container'>
               {
                  <Cart></Cart>
