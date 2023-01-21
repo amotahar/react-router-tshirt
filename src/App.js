@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Orders from './components/Orders/Orders';
 import Contacts from './components/Contacts/Contacts';
+import Grandpa from './components/Grandpa/Grandpa';
 function App() {
   
   const router = createBrowserRouter([
@@ -27,6 +28,10 @@ function App() {
       {
         path:'/contacts',
         element: <Contacts></Contacts>
+      },
+      {
+        path:'/grandpa',
+        element: <Grandpa></Grandpa>
       },
       {
         path:'/orders',
