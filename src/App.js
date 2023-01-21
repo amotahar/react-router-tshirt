@@ -9,28 +9,28 @@ function App() {
   
   const router = createBrowserRouter([
     { path: '/', 
-    element: <Main />,
+    element: <Main></Main>,
     children: [
       {
         path:'/',
-        element: <Home />
+        element: <Home></Home>
       },
       {
         path:'/home',
         loader: () => fetch('tshirt.json'),
-        element: <Home />
+        element: <Home></Home>
       },
       {
         path:'/about',
-        element: <About />
+        element: <About></About>
       },
       {
         path:'/contacts',
-        element: <Contacts />
+        element: <Contacts></Contacts>
       },
       {
         path:'/orders',
-        element: <Orders />
+        element: <Orders></Orders>
       },
     ]
   }

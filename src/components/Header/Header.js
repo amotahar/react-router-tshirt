@@ -5,14 +5,10 @@ import './Header.css';
 const Header = () => {
     return (
             <nav className='header'>
-            <Link to='home'>Home</Link>
-            <Link to='about'>About</Link>
-            <Link to='orders'>Orders</Link>
-            <Link to='contacts'>Contacts</Link>
-            <Link to='home'>Home</Link>
-            <Link to='about'>About</Link>
-            <Link to='orders'>Orders</Link>
-            <Link to='contacts'>Contacts</Link>
+            <Link to='/home'>Home</Link>
+            <Link to='/about'>About</Link>
+            <Link to='/orders'>Orders</Link>
+            <Link to='/contacts'>Contacts</Link>
             </nav>
     );
 };
