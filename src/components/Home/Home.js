@@ -27,30 +27,47 @@ const Home = () => {
 
     }
     return (
-        <div className='home-container'>
-           <div className='ts-container'>       
-           {/* {
-            tshirts.map(tshirt => <TShirt key={tshirt._id} tshirt={tshirt} handleAddToCart={handleAddToCart}
-            ></TShirt>)
-           } */}
-           {
-            tShirts.map(tshirt => <TShirt
-            key={tshirt._id}
-            tshirt={tshirt}
-            handleAddToCart={handleAddToCart}
-            ></TShirt>)
-           }
+        // <div className='home-container'>
+        //    <div className='ts-container'>       
+        //    {/* {
+        //     tshirts.map(tshirt => <TShirt key={tshirt._id} tshirt={tshirt} handleAddToCart={handleAddToCart}
+        //     ></TShirt>)
+        //    } */}
+        //    {
+        //     tShirts.map((tshirt) => <TShirt
+        //     key={tshirt._id}
+        //     tshirt={tshirt}
+        //     handleAddToCart={handleAddToCart}
+        //     ></TShirt>)
+        //    }
            
-              </div>
-           <div className='cart-container'>
+        //       </div>
+        //    <div className='cart-container'>
               
-                 <Cart
-                 cart={cart} 
-                 handleRemoveItem={handleRemoveItem}
-                 ></Cart>
+        //          <Cart
+        //          cart={cart} 
+        //          handleRemoveItem={handleRemoveItem}
+        //          ></Cart>
               
-           </div>
+        //    </div>
 
+        // </div>
+        <div className='home-container'>
+            <div className="t-shirt-container">
+                {
+                    tShirts.map(tshirt => <TShirt           
+                        key={tshirt._id}
+                        tshirt={tshirt}
+                        handleAddToCart={handleAddToCart}
+                    ></TShirt>)
+                }
+            </div>
+            <div className="cart-container">
+                <Cart
+                    cart={cart}
+                    handleRemoveItem={handleRemoveItem}
+                ></Cart>
+            </div>
         </div>
     );
 };

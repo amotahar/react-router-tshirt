@@ -14,12 +14,13 @@ function App() {
     children: [
       {
         path:'/',
-        element: <Home></Home>
+        loader: () => fetch('tshirt.json'),
+        element: <Home/>
       },
       {
         path:'/home',
         loader: () => fetch('tshirt.json'),
-        element: <Home></Home>
+        element: <Home/>
       },
       {
         path:'/about',

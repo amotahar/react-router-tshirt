@@ -33,11 +33,11 @@ const Cart = ({cart, handleRemoveItem}) => {
             }
             <p>and operator</p>
             {
-                cart.length===2 && <h2>Double Item</h2>
+                cart.length===2 && <h4>Double Item</h4>
             }
             <p>Or operator</p>
             {
-                cart.length ===4 || <h2>Charta Item naw</h2>
+                cart.length ===4 || <h4>Charta Item naw</h4>
             }
         </div>
     );
