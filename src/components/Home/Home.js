@@ -5,7 +5,7 @@ import Cart from '../Cart/Cart';
 import './Home.css';
 
 const Home = () => {
-    const tshirts = useLoaderData();
+    const tShirts = useLoaderData();
       const [cart, setCart] = useState([]);
       const handleAddToCart = tshirt => {
       const exists = cart.find(ts=> ts._id === tshirt._id);
@@ -27,10 +27,14 @@ const Home = () => {
 
     }
     return (
-        <div className='home-conatainer'>
-           <div className='tshirt-container'>       
+        <div className='home-container'>
+           <div className='ts-container'>       
+           {/* {
+            tshirts.map(tshirt => <TShirt key={tshirt._id} tshirt={tshirt} handleAddToCart={handleAddToCart}
+            ></TShirt>)
+           } */}
            {
-            tshirts.map(tshirt => <TShirt
+            tShirts.map(tshirt => <TShirt
             key={tshirt._id}
             tshirt={tshirt}
             handleAddToCart={handleAddToCart}

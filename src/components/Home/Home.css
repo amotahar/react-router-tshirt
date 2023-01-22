@@ -1,10 +1,10 @@
-.home-conatainer{
+.home-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
     margin-left: 20px;
 }
 
-.tshirt-container{
+.ts-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
